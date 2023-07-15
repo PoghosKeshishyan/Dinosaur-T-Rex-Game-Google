@@ -10,6 +10,14 @@ document.addEventListener('keydown', function () {
     jump();
 })
 
+document.addEventListener('click', function () {
+    if (cactus.classList != 'active') {
+        cactus.classList.add('active');
+    }
+
+    jump();
+})
+
 function jump() {
     const audio = document.createElement('audio');
     audio.src = './sounds/jump.mp3';
